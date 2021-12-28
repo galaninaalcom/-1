@@ -88,16 +88,16 @@ int main(int argc, char** argv) {
                 cout << 0;
             }
             else {
-                int number = physics(0, h0, VVX, VVY, 0, coordX, coordY); // Подсчёт ответа
+                int number = physics(0, h0, VVX, VVY, 0, coordX, coordY); // Подсчитываем ответ
                 cout << number; // Вывод номера промежутка
             }
         }
         else {
-            cout << "Unable to open file" << endl; // Если невозможно открыть файл, то ошибка
+            cout << "Unable to open file" << endl; // в случаве если невозможно открыть файл, то выводим ошибку
         }
     }
     else {
-        cout << "there are no arguments or there are more of them than we expect" << endl; // Если некорректное кол-во аргументов
+        cout << "there are no arguments or there are more of them than we expect" << endl; // в случае, если введено некорректное кол-во аргументов
     }
     return 0;
 }
